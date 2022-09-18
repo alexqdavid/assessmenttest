@@ -1,7 +1,7 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-let faveColors = ['red', 'green', 'black']
+//let faveColors = ['red', 'green', 'black']
  // let faveColors = faveColors.slice();
  // console.log(faveColors);
 // i had the delete the const for the favecolors to get it right for some reason
@@ -9,8 +9,8 @@ let faveColors = ['red', 'green', 'black']
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-faveColors.push('blue')
-console.log(faveColors);
+//faveColors.push('blue')
+//console.log(faveColors);
 //////////////////PROBLEM 3////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
@@ -20,8 +20,7 @@ console.log(faveColors);
 const numbers = [1, 2, 3, 4, 5]
 numbers.shift();
 numbers.pop();
-console.log(numbers);
-console.log("middleNums");
+console.log(`${numbers} middleNums`);
 
 
 
@@ -35,11 +34,16 @@ console.log("middleNums");
   to the answers array. 
 */
 
-const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
-
-let answers = []
-
-for (let bigOrSmallArray = 0; bigOrSmallArray > 100; i++) {
-   console.log(`${bigOrSmallArray}big`);
+function bigOrSmallArray(arr) {
+  const answers = [];
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] <= 100) {
+      answers.push('small');
+    } else {
+      answers.push('big');
+    }
+  }
+  return(answers);
 }
-console.log(bigOrSmallArray)
+
+console.log(bigOrSmallArray([0, 234, 9, 827, 1, 2918, 10]))
