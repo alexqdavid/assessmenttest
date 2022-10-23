@@ -1,27 +1,30 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-//let faveColors = ['red', 'green', 'black']
- // let faveColors = faveColors.slice();
- // console.log(faveColors);
+let faveColors = ['red', 'green', 'black']
+ faveColors = faveColors.slice();
+ console.log(faveColors);
 // i had the delete the const for the favecolors to get it right for some reason
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//faveColors.push('blue')
-//console.log(faveColors);
+faveColors.push('blue')
+console.log(faveColors);
 //////////////////PROBLEM 3////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
   numbers array that will capture only the middle numbers (2, 3, 4).
 */
 
-const numbers = [1, 2, 3, 4, 5]
-numbers.shift();
-numbers.pop();
-console.log(`${numbers} middleNums`);
+function middleNums (mid) {
 
+  let number = []
+  number.push(mid[1]);
+
+  return number;
+}
+console.log(middleNums([1, 2, 3]));
 
 
 //////////////////PROBLEM 4////////////////////
